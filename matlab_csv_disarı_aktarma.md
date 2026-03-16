@@ -7,4 +7,4 @@ basinc = out.pressure_data.Data; % Senin eklediğin yeni sensörün verisi
 veri_tablosu = table(zaman, debi, basinc, 'VariableNames', {'Time', 'Flow_Rate', 'Pressure'});
 
 % 3. Tabloyu bilgisayarına CSV olarak kaydet
-writetable(veri_tablosu, 'hydrotwin_sensor_data_v3.csv');
+writetable(veri_tablosu, 'veriler/hydrotwin_sensor_data_v3.csv');

@@ -6,7 +6,6 @@ st.set_page_config(page_title="HydroTwin Paneli", layout="wide")
 st.title("🌊 HydroTwin: Dijital İkiz ve Kestirimci Bakım Paneli")
 st.markdown("Fiziksel su şebekesinden gelen IoT sensör verileri ve XGBoost Yapay Zeka analiz ekranı.")
 
-@st.cache_data
 def veri_yukle():
     return pd.read_csv('hydrotwin_full_iot_data.csv')
 

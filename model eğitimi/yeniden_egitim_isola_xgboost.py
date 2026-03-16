@@ -51,3 +51,27 @@ joblib.dump(scaler, 'hydrotwin_scaler.pkl')
 
 print("\n[BAŞARILI] Tüm Çok Katmanlı Yapay Zeka Modelleri (.pkl) Diske Kaydedildi!")
 print("Rapor Hedefleri: İlerleme %65 Tamamlandı!")
+
+
+import matplotlib.pyplot as plt
+from sklearn.metrics import ConfusionMatrixDisplay
+
+cm_iso = confusion_matrix(y, y_pred_iso_formatted)
+fig1, ax1 = plt.subplots(figsize=(6, 5))
+disp1 = ConfusionMatrixDisplay(confusion_matrix=cm_iso, display_labels=['Normal Su (0)', 'Sızıntı (1)'])
+disp1.plot(ax=ax1, cmap='Blues', values_format='d')
+ax1.set_title('Isolation Forest - Confusion Matrix')
+fig1.tight_layout()
+fig1.savefig('figure1_isolation_forest_cm.png', dpi=150)
+print("\n[GRAFIK] figure1_isolation_forest_cm.png kaydedildi.")
+
+cm_xgb = confusion_matrix(y_test, y_pred_xgb)
+fig2, ax2 = plt.subplots(figsize=(6, 5))
+disp2 = ConfusionMatrixDisplay(confusion_matrix=cm_xgb, display_labels=['Normal Su (0)', 'Sızıntı (1)'])
+disp2.plot(ax=ax2, cmap='Oranges', values_format='d')
+ax2.set_title('XGBoost - Confusion Matrix')
+fig2.tight_layout()
+fig2.savefig('figure2_xgboost_cm.png', dpi=150)
+print("[GRAFIK] figure2_xgboost_cm.png kaydedildi.")
+
+plt.show()
