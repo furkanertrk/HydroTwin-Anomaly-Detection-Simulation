@@ -1,0 +1,15 @@
+# Klasörler
+Yeni klasör/
+anomali taspiti model egitimi/
+slprj/
+Çalışma Raporu/
+all/
+
+# Gereksiz Dosya Tipleri
+*.docx
+*.pptx
+*.tmp
+~$*
+
+# İstenmeyen Özel Dosyalar
+hafta2.slx
