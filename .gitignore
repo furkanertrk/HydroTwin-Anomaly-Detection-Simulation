@@ -1,0 +1,10 @@
+
+# Generated presentation / delivery packages
+hocaya_sunum*.zip
+python_port.zip
+last_presentation_package_path.txt
+sunum/
+
+# Python cache
+__pycache__/
+*.py[cod]
