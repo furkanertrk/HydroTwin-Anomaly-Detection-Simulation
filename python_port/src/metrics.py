@@ -4,9 +4,14 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from datetime import datetime
+from math import hypot
 
 
 SUCCESS_DISTANCE_M = 300.0
+
+
+def euclidean_distance_m(x1: float, y1: float, x2: float, y2: float) -> float:
+    return float(hypot(x1 - x2, y1 - y2))
 
 
 @dataclass(frozen=True)

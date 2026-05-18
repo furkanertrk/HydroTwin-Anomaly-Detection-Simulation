@@ -1,0 +1,4 @@
+check_type,pipe_id,start_node,end_node,midpoint_x,midpoint_y,sample_junction_id,distance_m,within_threshold,junction_in_sensitivity,junction_zone_id
+pipe_midpoint_distance,p257,n350,n351,296.91499999999996,1569.9699999999998,n351,22.849105562362816,True,True,30
+pipe_midpoint_distance,p461,n106,n484,267.815,423.37,n106,19.719739475966705,True,True,20
+pipe_midpoint_distance,p673,n206,n623,1655.71,657.2650000000001,n206,22.111694304145853,True,True,8
