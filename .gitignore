@@ -8,3 +8,13 @@ sunum/
 # Python cache
 __pycache__/
 *.py[cod]
+
+# Large local data files (shared outside Git)
+data/4017659.zip
+data/L-TOWN_Real.inp
+data/scada_2019.mat
+data/2018_SCADA_Demands.csv
+data/2018_SCADA.xlsx
+data/2019_SCADA_Demands.csv
+data/2019_SCADA.xlsx
+data/scada_2018.mat
